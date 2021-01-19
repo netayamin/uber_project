@@ -16,3 +16,21 @@
 /Users/yaminn/Downloads/uber 2/uber_uni/obj/Debug/netstandard2.0/uber_uni.dll
 /Users/yaminn/Downloads/uber 2/uber_uni/obj/Debug/netstandard2.0/ref/uber_uni.dll
 /Users/yaminn/Downloads/uber 2/uber_uni/obj/Debug/netstandard2.0/uber_uni.pdb
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/views_bottomNav/uberGuardViews/chatView.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/views_bottomNav/uberGuardViews/inputBar.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/view_assets/IncomeViewCell.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/view_assets/inputBar.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/view_assets/outgoingViewCell.xaml.g.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.AssemblyInfoInputs.cache
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.AssemblyInfo.cs
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.csproj.CoreCompileInputs.cache
+/Users/yaminn/Downloads/uber-2/uber_uni/bin/Debug/netstandard2.0/uber_uni.deps.json
+/Users/yaminn/Downloads/uber-2/uber_uni/bin/Debug/netstandard2.0/uber_uni.dll
+/Users/yaminn/Downloads/uber-2/uber_uni/bin/Debug/netstandard2.0/ref/uber_uni.dll
+/Users/yaminn/Downloads/uber-2/uber_uni/bin/Debug/netstandard2.0/uber_uni.pdb
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.dll
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/ref/uber_uni.dll
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.pdb
+/Users/yaminn/Downloads/uber-2/uber_uni/obj/Debug/netstandard2.0/uber_uni.csprojAssemblyReference.cache

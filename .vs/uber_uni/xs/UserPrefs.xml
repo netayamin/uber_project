@@ -1,34 +1,39 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{A15B151B-1498-4CA1-910F-0613B041FB07}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="uber_uni.iOS/Main.cs">
     <Files>
-      <File FileName="uber_uni/views_bottomNav/uberEatsView.cs" Line="109" Column="43" />
-      <File FileName="uber_uni/views_bottomNav/youView.cs" />
-      <File FileName="uber_uni/views_bottomNav/bottomTabsView.cs" />
-      <File FileName="uber_uni/views_bottomNav/uberBusinessView.cs" />
+      <File FileName="uber_uni/views_sideNav/sideNavViewPage.cs" IsPinned="True" />
+      <File FileName="uber_uni/views_bottomNav/uberEatsView.cs" Line="66" Column="1" />
       <File FileName="uber_uni/views_sideNav/customTrip.cs" />
-      <File FileName="uber_uni/RegisterAccountView.cs" />
-      <File FileName="uber_uni/mainPagView.cs" />
-      <File FileName="uber_uni/view_assets/orderRideView.cs" />
-      <File FileName="uber_uni/RootViewController.cs" />
-      <File FileName="uber_uni/AssemblyInfo.cs" />
-      <File FileName="uber_uni.iOS/Main.cs" Line="24" Column="1" />
-      <File FileName="uber_uni/views_sideNav/sideNavViewPage.cs" />
+      <File FileName="uber_uni/RegisterAccountView.cs" Line="33" Column="31" />
+      <File FileName="uber_uni/mainPagView.cs" Line="29" Column="28" />
+      <File FileName="uber_uni/view_assets/orderRideView.cs" Line="8" Column="43" />
+      <File FileName="uber_uni/RootViewController.cs" Line="11" Column="53" />
+      <File FileName="uber_uni/AssemblyInfo.cs" Line="4" Column="1" />
+      <File FileName="uber_uni.iOS/Main.cs" Line="3" Column="19" />
+      <File FileName="uber_uni.iOS/AppDelegate.cs" Line="14" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Aapt2.targets" Line="73" Column="10" />
+      <File FileName="uber_uni/obj/Debug/netstandard2.0/view_assets/inputBar.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/xamarin.forms/5.0.0.1874/buildTransitive/Xamarin.Forms.targets" Line="191" Column="1" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/trackCompnaionView.cs" Line="28" Column="1" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/chatView.xaml.cs" Line="17" Column="25" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/chatView.xaml" Line="64" Column="23" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/inputBar.xaml.cs" Line="28" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="uber_uni" expanded="True">
             <Node name="uber_uni" expanded="True">
-              <Node name="helpers" expanded="True">
-                <Node name="models" expanded="True" />
-              </Node>
               <Node name="view_assets" expanded="True" />
-              <Node name="views_bottomNav" expanded="True" />
-              <Node name="views_sideNav" expanded="True" />
-              <Node name="App.xaml" expanded="True" />
+              <Node name="views_bottomNav" expanded="True">
+                <Node name="uberGuardViews" expanded="True">
+                  <Node name="chatView.xaml" expanded="True" />
+                  <Node name="inputBar.xaml" expanded="True" />
+                </Node>
+              </Node>
             </Node>
+            <Node name="uber_uni.Android" expanded="True" />
             <Node name="uber_uni.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
               <Node name="Main.cs" selected="True" />
             </Node>
           </Node>

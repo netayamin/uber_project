@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Hs2gjFyQyz6R8U/iIS6zbb+DOg7WyAkHMoO4onuZ7CdZ/WiTCds9FsJ5OpO8PkpwwYSb6nEZFG33tKZfIDH44g==",
+  "dgSpecHash": "xtlvJ/NeCaeJzeIlqBiTqKvswbMuOgFPCOjEas2mQtIEuZEBeUv29H52F4CAV/pTfAippmUsi6Mrq+QWJdnZgA==",
   "success": true,
   "projectFilePath": "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj",
   "expectedPackageFiles": [
     "/Users/yaminn/.nuget/packages/firebaseadmin/2.0.0/firebaseadmin.2.0.0.nupkg.sha512",
-    "/Users/yaminn/.nuget/packages/firebasedatabase.net/4.0.4/firebasedatabase.net.4.0.4.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/firebasedatabase.net/4.0.5/firebasedatabase.net.4.0.5.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/google.api.gax/3.2.0/google.api.gax.3.2.0.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/google.api.gax.rest/3.2.0/google.api.gax.rest.3.2.0.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/google.apis/1.49.0/google.apis.1.49.0.nupkg.sha512",
@@ -44,8 +44,8 @@
     "/Users/yaminn/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/xamarin.essentials/1.6.0/xamarin.essentials.1.6.0.nupkg.sha512",
-    "/Users/yaminn/.nuget/packages/xamarin.forms/4.8.0.1821/xamarin.forms.4.8.0.1821.nupkg.sha512",
-    "/Users/yaminn/.nuget/packages/xamarin.forms.maps/4.8.0.1821/xamarin.forms.maps.4.8.0.1821.nupkg.sha512"
+    "/Users/yaminn/.nuget/packages/xamarin.forms/5.0.0.1874/xamarin.forms.5.0.0.1874.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/xamarin.forms.maps/5.0.0.1874/xamarin.forms.maps.5.0.0.1874.nupkg.sha512"
   ],
   "logs": []
 }

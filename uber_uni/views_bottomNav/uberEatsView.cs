@@ -64,12 +64,6 @@ namespace uber_uni.views
             Content = setUpView();
         }
 
-
-        private void UserLocation_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-
-        }
-
         public void findPlacesNearAsync(Position position)
         {
             var location = new Location(latitude: position.Latitude, longitude: position.Longitude);
@@ -87,26 +81,35 @@ namespace uber_uni.views
             {
                 if ( response.Results != null)
                 {
-                    var photoRef = r.Photos.ElementAt<Photo>(0).PhotoReference;
-                    if (photoRef != null)
+                    try {
+
+                        var photoRef = r.Photos.ElementAt<Photo>(0).PhotoReference;
+                        if (photoRef != null)
+                        {
+                            var imageUrl = $"https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference={photoRef}&key={Keys.ApiKey}";
+                            var placeInfo = new PlaceInfo { address = r.Vicinity, name = r.Name, picUrl = imageUrl };
+                            collection.Add(placeInfo);
+                        }
+                        var restruantPosition = new Position(latitude: r.Geometry.Location.Latitude, longitude: r.Geometry.Location.Longitude);
+                        var pin = new Pin
+                        {
+                            Label = r.Name,
+                            Position = restruantPosition,
+                            Address = r.Vicinity,
+                            Type = PinType.Place,
+                        };
+                        loader.IsEnabled = false;
+                        loader.IsRunning = false;
+                        loader.IsVisible = false;
+                        pin.InfoWindowClicked += Pin_InfoWindowClicked;
+                        mapView.Pins.Add(pin);
+
+                    } catch
                     {
-                        var imageUrl = $"https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference={photoRef}&key={Keys.ApiKey}";
-                        var placeInfo = new PlaceInfo { address = r.Vicinity, name = r.Name, picUrl = imageUrl };
-                        collection.Add(placeInfo);
+                        Console.WriteLine("err");
                     }
-                    var restruantPosition = new Position(latitude: r.Geometry.Location.Latitude, longitude: r.Geometry.Location.Longitude);
-                    var pin = new Pin
-                    {
-                        Label = r.Name,
-                        Position = restruantPosition,
-                        Address = r.Vicinity,
-                        Type = PinType.Place,
-                    };
-                    loader.IsEnabled = false;
-                    loader.IsRunning = false;
-                    loader.IsVisible = false;
-                    pin.InfoWindowClicked += Pin_InfoWindowClicked;
-                    mapView.Pins.Add(pin);
+
+           
                 }
             
             }

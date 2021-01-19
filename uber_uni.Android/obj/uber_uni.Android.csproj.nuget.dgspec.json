@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yaminn/Downloads/uber-2/uber_uni.Android/uber_uni.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/yaminn/Downloads/uber-2/uber_uni.Android/uber_uni.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yaminn/Downloads/uber-2/uber_uni.Android/uber_uni.Android.csproj",
+        "projectName": "uber_uni.Android",
+        "projectPath": "/Users/yaminn/Downloads/uber-2/uber_uni.Android/uber_uni.Android.csproj",
+        "packagesPath": "/Users/yaminn/.nuget/packages/",
+        "outputPath": "/Users/yaminn/Downloads/uber-2/uber_uni.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/yaminn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj": {
+                "projectPath": "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            },
+            "GooglePlacesApi": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
+            "Sharpnado.Forms.HorizontalListView": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.1874, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[5.0.0.1874, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj",
+        "projectName": "uber_uni",
+        "projectPath": "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj",
+        "packagesPath": "/Users/yaminn/.nuget/packages/",
+        "outputPath": "/Users/yaminn/Downloads/uber-2/uber_uni/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yaminn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            },
+            "GoogleApi": {
+              "target": "Package",
+              "version": "[3.10.5, )"
+            },
+            "GooglePlacesApi": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Sharpnado.Forms.HorizontalListView": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.1874, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[5.0.0.1874, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

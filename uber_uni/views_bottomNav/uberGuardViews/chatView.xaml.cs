@@ -10,6 +10,7 @@ namespace uber_uni.views_bottomNav.uberGuardViews
 
         public ICommand ScrollListCommand { get; set; }
         Compnaion camp = new Compnaion();
+
         public chatView(Compnaion comp)
         {
             this.BindingContext = new ChatPageViewModel();

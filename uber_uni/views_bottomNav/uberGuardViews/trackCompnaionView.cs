@@ -25,7 +25,7 @@ namespace uber_uni.views_bottomNav.uberGuardViews
 
         private StackLayout mainStack()
         {
-            gest.Tapped += Gest_Tapped;
+            chatBtn.Clicked += ChatBtn_Clicked;
             chatBtn.GestureRecognizers.Add(gest);
             chatBtn.Text = $"Chat to {comp.first_name}";
 
@@ -43,10 +43,12 @@ namespace uber_uni.views_bottomNav.uberGuardViews
                 };
         }
 
-        private void Gest_Tapped(object sender, EventArgs e)
+        private void ChatBtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new chatView(comp));
         }
+
+
     }
 }
 
