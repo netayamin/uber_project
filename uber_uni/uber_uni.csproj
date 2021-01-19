@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="FirebaseAdmin" Version="2.0.0" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="4.8.0.1821" />
+    <PackageReference Include="GooglePlacesApi" Version="1.0.17" />
+    <PackageReference Include="GoogleApi" Version="3.10.5" />
+    <PackageReference Include="Sharpnado.Forms.HorizontalListView" Version="1.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="helpers\" />
+    <Folder Include="view_assets\" />
+    <Folder Include="views_sideNav\" />
+    <Folder Include="views_bottomNav\" />
+    <Folder Include="helpers\models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="view_assets\IncomeViewCell.xaml.cs">
+      <DependentUpon>IncomeViewCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views_bottomNav\uberGuardViews\inputBar.xaml.cs">
+      <DependentUpon>inputBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="views_sideNav\customTrip.cs">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="helpers\LanguageList.json" />
+  </ItemGroup>
+</Project>
