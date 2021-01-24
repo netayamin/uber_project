@@ -15,7 +15,6 @@ namespace uber_uni.views
 
         DataTemplate dt = new DataTemplate(() =>
         {
-
             var date = new Label();
             var car = new Label { FontSize = 12 };
 

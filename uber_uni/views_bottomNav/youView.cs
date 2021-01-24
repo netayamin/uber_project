@@ -85,7 +85,7 @@ namespace uber_uni.views_bottomNav
 
         private View setUpView()
         {
-            chatImg.Source = new FontImageSource { FontFamily = App.meterialIconsFamily, Size = 30, Glyph = IconFont.Chat, Color = Color.White };
+            chatImg.Source = new FontImageSource { FontFamily = App.meterialIconsFamily, Size = 25, Glyph = IconFont.Chat, Color = Color.White };
             frame.Content = chatImg;
 
             return new AbsoluteLayout
@@ -95,6 +95,7 @@ namespace uber_uni.views_bottomNav
                 Children =
                 {
                     mapView,
+                    { frame , new Point(x: 10 , y: 10) },
                 }
             };
       
