@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -11,7 +12,7 @@ namespace uber_uni.views
 
         ListView tripsListView;
         public static ObservableCollection<Trip_Position> tripsCollection = new ObservableCollection<Trip_Position>();
-        ActivityIndicator loader = new ActivityIndicator { IsRunning = true, IsVisible = true, Color = Color.Red, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+        ActivityIndicator loader = new ActivityIndicator { IsRunning = true, IsVisible = true, Color = Color.Black, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
 
         DataTemplate dt = new DataTemplate(() =>
         {
@@ -37,11 +38,12 @@ namespace uber_uni.views
 
         public travelHistoryView()
         {
-            getUserTrips();
+              _  = getUserTrips();
 
+          
             tripsListView = new ListView
             {
-                ItemsSource = tripsCollection, ItemTemplate = dt, HasUnevenRows = true,  BackgroundColor = Color.FromHex("#F5F5F5"),
+                ItemTemplate = dt, HasUnevenRows = true,  BackgroundColor = Color.FromHex("#F5F5F5"),
                 SeparatorVisibility = SeparatorVisibility.None
             };
 
@@ -57,20 +59,23 @@ namespace uber_uni.views
 
 
 
-        private async void getUserTrips() {
+        private async Task getUserTrips() {
             tripsCollection.Clear();
-            var trips = await App.Database.geAllTrips();
-            foreach(var t in trips)
-            {
-                var trip = new Trip_Position {
+            var trips =  await App.Database.geAllTrips();
+
+            trips.ForEach((t) => {
+                var trip = new Trip_Position
+                {
                     position = new Position(latitude: t.drop_off_lat, longitude: t.pickup_longt),
                     date = t.date.ToLongDateString(),
                     car = t.car
-            };
+                };
                 tripsCollection.Add(trip);
-                loader.IsVisible = false;
-                loader.IsRunning = false;
-            }
+            });
+
+            tripsListView.ItemsSource = tripsCollection;
+            loader.IsVisible = false;
+            loader.IsRunning = false;
         }
 
     }

@@ -10,7 +10,7 @@ namespace uber_uni.views
     {
         private sideNavViewPage master = new sideNavViewPage();
         public bottomTabsView tabsView;
-        public NavigationPage mynav;
+        public NavigationPage mynav; 
 
         public RootViewController(Location dropOffPoint)
         {
@@ -27,9 +27,17 @@ namespace uber_uni.views
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as MasterPageItem;
+            Page page = new Page();
+
             if (item != null && item.TargetType != null)
             {
-                var page = (Page)Activator.CreateInstance(item.TargetType);
+                if (item.TargetType == typeof(bottomTabsView))
+                {
+                    page = (Page)Activator.CreateInstance(item.TargetType, new Location());
+                } else
+                {
+                    page = (Page)Activator.CreateInstance(item.TargetType);
+                }
                 var nav = new NavigationPage(page);
                 nav.BarBackgroundColor = Color.Black;
                 nav.BarTextColor = Color.White;

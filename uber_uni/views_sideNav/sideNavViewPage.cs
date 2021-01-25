@@ -80,7 +80,7 @@ namespace uber_uni.views
             {
                 Title = "Uber You",
                 IconSource = IconFont.FaceProfile ,
-                TargetType = typeof(youView)
+                TargetType = typeof(bottomTabsView)
             });
 
 

@@ -6,13 +6,14 @@ using uber_uni.views_bottomNav;
 using Xamarin.Forms;
 using GooglePlacesApi.Models;
 using Xamarin.Forms.Maps;
+using System.Runtime.InteropServices;
 
 namespace uber_uni.views
 {
     public class bottomTabsView : TabbedPage
     {
         
-        public bottomTabsView(Location dropOff)
+        public bottomTabsView([Optional] Location dropOff)
         {
             var pos = new Position(latitude: dropOff.Latitude, longitude: dropOff.Longitude);
             Children.Add(new uberEatsView(pos) { Title = "Eats", IconImageSource = new FontImageSource { FontFamily = App.meterialIconsFamily, Size = 30, Glyph = IconFont.Food } });

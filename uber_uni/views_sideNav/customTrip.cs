@@ -62,7 +62,6 @@ namespace uber_uni.views_bottomNav
 
         public customTrip()
         {
-
             var e = Task.Run(async () => await createLanguageList());
             languagePicker.ItemsSource = e.Result;
             defaultBtn.Clicked += DefaultBtn_Clicked;
