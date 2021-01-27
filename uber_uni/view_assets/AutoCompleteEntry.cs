@@ -39,11 +39,11 @@ namespace uber_uni.view_assets
         {
             s_cts.Cancel();
             list.Clear();
-            AutoCompleteList.IsVisible = true;
             AutoCompleteList.Focus();
 
             if ( e.NewTextValue.Length > 1 )
             {
+                AutoCompleteList.IsVisible = true;
                 var result = await App.googlePlacesService.GetPredictionsAsync(e.NewTextValue);
                 if (result.Items != null)
                 {

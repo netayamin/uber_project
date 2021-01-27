@@ -16,7 +16,8 @@ namespace uber_uni.orderViews
                 Children = {
                     new uberHeaderView("Uber Business", this),
                     mainView
-                }
+                },
+                VerticalOptions = LayoutOptions.FillAndExpand,
             };
 
         }

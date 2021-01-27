@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wdgQPmjriaB8hn6KVAfJb5SSGExEL91g7/LlDrbROjgNzzw8npax6CHG4oeCYR9WP+R2Bh0G03ihNW8Vhf4bJg==",
+  "dgSpecHash": "F1xIDAhsuoiJeZDdJC+mx8VZvVaY1T3yr36PSyANyKrlX4ISTzi6sRc37jHoPCJSwTMJ2YhET1urGr6wmhp3gw==",
   "success": true,
   "projectFilePath": "/Users/yaminn/Downloads/uber-2/uber_uni/uber_uni.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,11 @@
     "/Users/yaminn/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/portable.bouncycastle/1.8.1.3/portable.bouncycastle.1.8.1.3.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/prism.core/7.2.0.1422/prism.core.7.2.0.1422.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/prism.forms/7.2.0.1422/prism.forms.7.2.0.1422.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/prism.plugin.popups/7.2.0.1046/prism.plugin.popups.7.2.0.1046.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/refit/4.5.6/refit.4.5.6.nupkg.sha512",
+    "/Users/yaminn/.nuget/packages/rg.plugins.popup/1.2.0.223/rg.plugins.popup.1.2.0.223.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/sharpnado.forms.horizontallistview/1.8.0/sharpnado.forms.horizontallistview.1.8.0.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/sharpnado.taskmonitor/1.0.1/sharpnado.taskmonitor.1.0.1.nupkg.sha512",
     "/Users/yaminn/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",

@@ -39,7 +39,7 @@ namespace uber_uni
 
 
 
-        public async Task<ObservableCollection<User>> GetAllPersons()
+        public ObservableCollection<User> GetAllPersons()
         {
             try
             {

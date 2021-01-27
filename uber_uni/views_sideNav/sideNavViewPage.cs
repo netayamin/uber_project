@@ -41,7 +41,7 @@ namespace uber_uni.views
                 Children = {
                     stackFrame,
                     listView
-                }
+                }, Spacing = 0 , Padding = 0, Margin = 0
             };
 
             return stack;

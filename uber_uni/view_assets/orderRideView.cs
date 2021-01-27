@@ -15,7 +15,7 @@ namespace uber_uni.views
        public Label title = new Label { Text = "Schedule your ride", FontAttributes = FontAttributes.Bold };
         AutoCompleteEntry pickupPoint = new AutoCompleteEntry("Pick Up Point");
         AutoCompleteEntry dropOffPoint = new AutoCompleteEntry("Drop Off Point");
-        Entry comment_field = new Entry { Placeholder = "Additional Requirements", HeightRequest = 150, };
+        Entry comment_field = new Entry { Placeholder = "Additional Requirements", HeightRequest = 100, VerticalOptions = LayoutOptions.FillAndExpand};
        TimePicker time_field = new TimePicker { VerticalOptions = LayoutOptions.Start, HeightRequest = 50 };
        ObservableCollection<String> generesList = new ObservableCollection<String>();
        Picker musicPicker = new Picker { HeightRequest = 50 };
@@ -85,7 +85,7 @@ namespace uber_uni.views
             App.Database.saveNewTrip(t);
             var postion = new Position(latitude: DropOffPoint.Latitude, longitude: DropOffPoint.Longitude);
             var pickup_postion = new Position(latitude: PickUpPoint.Latitude, longitude: PickUpPoint.Longitude);
-            youView.drawRouteOnMap(pickup_postion , postion);
+            _ = youView.drawRouteOnMap(pickup_postion , postion);
         } 
 
         private StackLayout viewSetUp(Boolean showMusicPicker, Boolean showConnectWithLocal, Boolean showCommentField)
@@ -113,7 +113,7 @@ namespace uber_uni.views
                             submitBtn
                         },
                 Padding = 20,
-                Spacing = 10, VerticalOptions = LayoutOptions.FillAndExpand
+                Spacing = 10,
             };
           
            

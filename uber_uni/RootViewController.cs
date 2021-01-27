@@ -14,6 +14,7 @@ namespace uber_uni.views
 
         public RootViewController(Location dropOffPoint)
         {
+
             tabsView = new bottomTabsView(dropOffPoint);
             mynav = new NavigationPage(tabsView);
             Master = master;

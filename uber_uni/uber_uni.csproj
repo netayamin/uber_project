@@ -20,6 +20,7 @@
     <PackageReference Include="GoogleApi" Version="3.10.5" />
     <PackageReference Include="Sharpnado.Forms.HorizontalListView" Version="1.8.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1905" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="helpers\" />

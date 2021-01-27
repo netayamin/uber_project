@@ -7,7 +7,8 @@ namespace uber_uni
     public class mainPagView : ContentPage
     {
         orderRideView myview = new orderRideView(true, false, false);
-
+        ActivityIndicator loader = new ActivityIndicator { IsRunning = true, IsVisible = false, Color = Color.Black, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+                      
         public mainPagView()
         {
             myview.submitBtn.Clicked += SubmitBtn_Clicked;
@@ -19,6 +20,7 @@ namespace uber_uni
                 Margin =0, 
                 Children = {
                     new uberHeaderView("Uber, your ride your way", this),
+                    loader,
                     myview,
                 }
             };

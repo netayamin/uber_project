@@ -64,10 +64,10 @@ namespace uber_uni.views
             Content = setUpView();
         }
 
-        public void findPlacesNearAsync(Position position)
+        public async Task findPlacesNearAsync(Position position)
         {
             var location = new Location(latitude: position.Latitude, longitude: position.Longitude);
-            var request = new PlacesNearBySearchRequest
+            var request =   new PlacesNearBySearchRequest
             {
                 Key = Keys.ApiKey,
                 Location = location,
@@ -75,7 +75,7 @@ namespace uber_uni.views
                 Type = SearchPlaceType.Restaurant
             };
 
-            var response = GooglePlaces.NearBySearch.QueryAsync(request).Result;
+            var response = await GooglePlaces.NearBySearch.QueryAsync(request);
            
             foreach (var r in response.Results)
             {
@@ -125,6 +125,7 @@ namespace uber_uni.views
         {
             list = new ListView { ItemsSource = collection, HeightRequest = Application.Current.MainPage.Height/2 - 100, ItemTemplate = dt, HasUnevenRows = true};
             list.ItemSelected += List_ItemSelected;
+
             return new StackLayout
             {
                 Children = {
@@ -143,7 +144,8 @@ namespace uber_uni.views
         public void setLocation(Position pos)
         {
             mapView.MoveToRegion(MapSpan.FromCenterAndRadius(pos, new Distance(5000)));
-            findPlacesNearAsync(pos);
+            _ = findPlacesNearAsync(pos);
+
         }
 
     }

@@ -1,31 +1,27 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{B73008B4-4643-4442-A84D-4578836ED42B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="uber_uni/views_sideNav/travelHistoryView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/bin/MSBuild/Current/bin/Microsoft.Common.CurrentVersion.targets">
     <Files>
-      <File FileName="uber_uni.iOS/Resources/LaunchScreen.storyboard" />
-      <File FileName="uber_uni/views_bottomNav/uberEatsView.cs" Line="120" Column="50" />
-      <File FileName="uber_uni.iOS/Main.cs" Line="29" Column="1" />
-      <File FileName="uber_uni/views_bottomNav/uberBusinessView.cs" Line="9" Column="47" />
-      <File FileName="uber_uni/RootViewController.cs" Line="12" Column="25" />
-      <File FileName="uber_uni/mainPagView.cs" Line="1" Column="1" />
-      <File FileName="uber_uni/views_bottomNav/bottomTabsView.cs" Line="25" Column="22" />
-      <File FileName="uber_uni/view_assets/orderRideView.cs" Line="124" Column="54" />
-      <File FileName="uber_uni/views_bottomNav/uberGuardViews/uberGuardView.cs" Line="1" Column="1" />
-      <File FileName="uber_uni/views_bottomNav/uberGuardViews/companionsView.cs" Line="76" Column="60" />
-      <File FileName="uber_uni/views_sideNav/sideNavViewPage.cs" Line="1" Column="1" />
-      <File FileName="uber_uni/views_sideNav/travelHistoryView.cs" Line="1" Column="1" />
+      <File FileName="uber_uni/view_assets/orderRideView.cs" Line="17" Column="52" />
+      <File FileName="uber_uni/views_bottomNav/uberBusinessView.cs" Line="21" Column="1" />
+      <File FileName="uber_uni/view_assets/AutoCompleteEntry.cs" Line="32" Column="37" />
+      <File FileName="uber_uni.iOS/Main.cs" Line="16" Column="6" />
+      <File FileName="uber_uni/views_bottomNav/youView.cs" Line="89" Column="18" />
+      <File FileName="uber_uni/views_sideNav/travelHistoryView.cs" Line="56" Column="63" />
+      <File FileName="uber_uni/views_sideNav/sideNavViewPage.cs" Line="45" Column="55" />
+      <File FileName="uber_uni/views_bottomNav/uberEatsView.cs" Line="63" Column="41" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/AddNewCompanion.cs" Line="113" Column="10" />
+      <File FileName="../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/bin/MSBuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2143" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="uber_uni" expanded="True">
             <Node name="uber_uni" expanded="True">
-              <Node name="view_assets" expanded="True" />
               <Node name="views_bottomNav" expanded="True">
                 <Node name="uberGuardViews" expanded="True" />
+                <Node name="uberEatsView.cs" selected="True" />
               </Node>
-              <Node name="views_sideNav" expanded="True">
-                <Node name="travelHistoryView.cs" selected="True" />
-              </Node>
+              <Node name="views_sideNav" expanded="True" />
             </Node>
             <Node name="uber_uni.iOS" expanded="True" />
           </Node>
@@ -33,7 +29,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.uber__uni.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.uber__uni.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6A067CCE-C577-4240-8CA9-2EDA5D2E965E" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

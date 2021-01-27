@@ -74,6 +74,9 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.1905</Version>
     </PackageReference>
+    <PackageReference Include="Prism.Plugin.Popups">
+      <Version>7.2.0.1046</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
