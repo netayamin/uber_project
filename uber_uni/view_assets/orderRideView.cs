@@ -98,6 +98,7 @@ namespace uber_uni.views
             comment_field.IsVisible = showCommentField;
             connectWithALocal.IsVisible = showConnectWithLocal;
 
+            connectWithALocal.Clicked += ConnectWithALocal_Clicked;
             var topStack = new StackLayout { Children = { pickupPoint, time_field }, Orientation = StackOrientation.Horizontal};
 
             return new StackLayout
@@ -116,6 +117,11 @@ namespace uber_uni.views
             };
           
            
+        }
+
+        private void ConnectWithALocal_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainChatView());
         }
     }
 }

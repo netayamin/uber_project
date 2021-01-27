@@ -6,8 +6,6 @@ namespace uber_uni.orderViews
 {
     public class uberBusinessView : ContentPage
     {
-
-
         orderRideView mainView = new orderRideView(false, true, true);
         public uberBusinessView()
         {
@@ -26,6 +24,10 @@ namespace uber_uni.orderViews
         private void SubmitBtn_Clicked(object sender, EventArgs e)
         {
             mainView.createTripsAndSaveInDB();
+            var tab = this.Parent as TabbedPage;
+            tab.CurrentPage = tab.Children[1];
+
+
         }
     }
 }

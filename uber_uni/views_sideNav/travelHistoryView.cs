@@ -58,7 +58,6 @@ namespace uber_uni.views
         }
 
 
-
         private async Task getUserTrips() {
             tripsCollection.Clear();
             var trips =  await App.Database.geAllTrips();
