@@ -51,16 +51,17 @@ namespace uber_uni.views
         {
             listView = new ListView
             {
+                BackgroundColor = Color.Black,
                 ItemsSource = masterPageItems,
                 ItemTemplate = new DataTemplate(() => {
                     var grid = new Grid { Padding = new Thickness(5, 10) };
                     grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(30) });
                     grid.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Star });
                     var image = new Image();
-                    var iconImage = new FontImageSource { FontFamily = App.meterialIconsFamily, Size = 30 };
+                    var iconImage = new FontImageSource { FontFamily = App.meterialIconsFamily, Size = 30, Color = Color.White };
                     iconImage.SetBinding(FontImageSource.GlyphProperty, "IconSource");
                     image.Source = iconImage;
-                    var label = new Label { VerticalOptions = LayoutOptions.FillAndExpand };
+                    var label = new Label { VerticalOptions = LayoutOptions.FillAndExpand, TextColor = Color.White };
                     label.SetBinding(Label.TextProperty, "Title");
 
                     grid.Children.Add(image);

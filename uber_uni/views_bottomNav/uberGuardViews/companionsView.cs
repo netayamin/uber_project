@@ -27,7 +27,6 @@ namespace uber_uni
 
         public companionsView()
         {
-            
             getCompanions();
             Content = setUpView();
         }
@@ -74,10 +73,10 @@ namespace uber_uni
             {
                 Children =
                 {
-                    new uberHeaderView("Uber Guard", this),
+                    { new uberHeaderView("Uber Guard", this) },
                     compnaionsListView,
                     btn
-                }, Spacing = 20
+                }, Spacing = 0, Padding = 0, Margin = 0,
             };
         }
 

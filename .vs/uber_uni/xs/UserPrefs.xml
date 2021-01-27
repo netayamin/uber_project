@@ -1,5 +1,5 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{B73008B4-4643-4442-A84D-4578836ED42B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="uber_uni/views_bottomNav/uberGuardViews/companionsView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="uber_uni/views_sideNav/travelHistoryView.cs">
     <Files>
       <File FileName="uber_uni.iOS/Resources/LaunchScreen.storyboard" />
       <File FileName="uber_uni/views_bottomNav/uberEatsView.cs" Line="120" Column="50" />
@@ -10,7 +10,9 @@
       <File FileName="uber_uni/views_bottomNav/bottomTabsView.cs" Line="25" Column="22" />
       <File FileName="uber_uni/view_assets/orderRideView.cs" Line="124" Column="54" />
       <File FileName="uber_uni/views_bottomNav/uberGuardViews/uberGuardView.cs" Line="1" Column="1" />
-      <File FileName="uber_uni/views_bottomNav/uberGuardViews/companionsView.cs" Line="1" Column="1" />
+      <File FileName="uber_uni/views_bottomNav/uberGuardViews/companionsView.cs" Line="76" Column="60" />
+      <File FileName="uber_uni/views_sideNav/sideNavViewPage.cs" Line="1" Column="1" />
+      <File FileName="uber_uni/views_sideNav/travelHistoryView.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,9 +21,10 @@
             <Node name="uber_uni" expanded="True">
               <Node name="view_assets" expanded="True" />
               <Node name="views_bottomNav" expanded="True">
-                <Node name="uberGuardViews" expanded="True">
-                  <Node name="companionsView.cs" selected="True" />
-                </Node>
+                <Node name="uberGuardViews" expanded="True" />
+              </Node>
+              <Node name="views_sideNav" expanded="True">
+                <Node name="travelHistoryView.cs" selected="True" />
               </Node>
             </Node>
             <Node name="uber_uni.iOS" expanded="True" />
