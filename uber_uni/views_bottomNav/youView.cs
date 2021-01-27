@@ -19,10 +19,9 @@ namespace uber_uni.views_bottomNav
 
     public class youView : ContentPage
     {
-        public static Map mapView = new Map { WidthRequest = App.ScreenWidth, VerticalOptions = LayoutOptions.FillAndExpand, IsVisible = false };
+        public static Map mapView = new Map { WidthRequest = App.ScreenWidth, VerticalOptions = LayoutOptions.FillAndExpand, IsVisible = true };
         Frame frame = new Frame { WidthRequest = 50, HeightRequest = 50, CornerRadius = 25, HasShadow = false, BackgroundColor = Color.Black, Margin =0 ,Padding = 0 };
         Image chatImg = new Image { VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
-        static ActivityIndicator loader = new ActivityIndicator { IsRunning = true, IsVisible = true, VerticalOptions = LayoutOptions.Center };
         TapGestureRecognizer tapGest = new TapGestureRecognizer { NumberOfTapsRequired = 1 };
 
         public youView()
@@ -72,8 +71,6 @@ namespace uber_uni.views_bottomNav
             mapView.Pins.Clear();
             mapView.Pins.Add(pin);
             mapView.Pins.Add(pin1);
-            mapView.IsVisible = true;
-            loader.IsVisible = false;
         }
 
 
@@ -90,7 +87,6 @@ namespace uber_uni.views_bottomNav
                 Children =
                 {
                     { mapView, new Rectangle(0,0,1,1), AbsoluteLayoutFlags.All },
-                    { loader , new Rectangle(0.5, 0.5, -1, -1), AbsoluteLayoutFlags.PositionProportional},
                     { frame , new Point(x: 10 , y: 10) },
                 }
             };
